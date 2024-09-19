@@ -29,35 +29,47 @@ const certificates =
     {
         name:"CSE110",
         group: "cse",
-        link:"https://byui.instructure.com/courses/239474"
+        link:"https://byui.instructure.com/courses/239474",
+        credits: 2,
+        completed: true
         },
     {
         name:"WDD130",
         group:" wdd",
-        link:"https://byui.instructure.com/courses/264658"
+        link:"https://byui.instructure.com/courses/264658",
+        credits: 2,
+        completed: true
     },
 
     {
         name:"CSE111",
         group: "cse",
-        link:"https://byui.instructure.com/courses/263580"
+        link:"https://byui.instructure.com/courses/263580",
+        credits: 2,
+        completed: true
     },
 
     {
         name:"CSE210",
         group:"cse",
-        link:"https://byui.instructure.com/courses/279992"
+        link:"https://byui.instructure.com/courses/279992",
+        credits: 2,
+        completed: true
     },
 
     {
         name: "WDD131",
         group:"wdd",
-        link:"https://byui.instructure.com/courses/299928"
+        link:"https://byui.instructure.com/courses/299928",
+        credits: 2,
+        completed: true
     },
     {
         name:"WDD231",
         group:"wdd",
-        link:"https://byui.instructure.com/courses/310076"
+        link:"https://byui.instructure.com/courses/310076",
+        credits: 2,
+        completed: false
     }
 ]
 
@@ -68,10 +80,11 @@ function CardCourse(filteredCourse){
       let courseName = item.name;
       let courseGroup= item.group;
       let courseLink=item.link;
+      let courseComplet= item.completed
       
       document.querySelector(".options").innerHTML += 
       `<a class="courseInf" href="${courseLink}">
-      <h4> ${courseName}</h4> 
+      <h4 class=${courseComplet}> ${courseName}</h4> 
       </a>`;
   
     }}
