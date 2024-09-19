@@ -1,0 +1,74 @@
+@media (max-width: 768px ){
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;}
+    main {
+            display: block;
+        }
+        nav{
+   
+            display: flex;
+            flex-direction: column;
+            font-family: "Nunito";
+            background-color:  rgb(160, 214, 165);
+            
+            
+        }
+        nav a{
+            display: none;
+                flex: 1 1 100%;
+                padding: 10px;
+                text-decoration: none;
+                
+        }
+    #menu {
+                    font-size: 1.5rem;
+                    border: 0;
+                    background: none;
+                    color: #000;
+                    position:fixed;
+                    right: 50px;
+                    top:10px;
+                    
+                    
+                }
+    #menu::before {
+                    content: "☰";
+                }
+                
+    #menu.open::before {
+        content: "X";
+                }
+                
+    .open a {
+         display: block;
+         color: white;
+         background-color: black;
+                }
+                
+    .options {
+    display: block;
+    text-align: center;
+    margin: 10px;
+                }
+
+    img{
+        display: block;
+        width: 15em;
+        align-content: center;
+        margin: 10px;
+    }
+      
+    .options a{
+        background-color:  rgb(160, 214, 165);
+        color: black;
+        border-radius: 10%;
+        margin: 10px;
+        text-decoration: none;
+}
+#my-state{
+    align-content: center;
+}
+
+}

@@ -1,0 +1,105 @@
+
+header {
+    display: block;
+    background-color: rgb(160, 214, 165);
+    color: black;
+    padding-top: 1em;
+    padding-left: 1em;
+    font-family: 'Space Grotesk';
+    text-align: center;
+    padding-bottom: 15px ;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; ;
+}
+nav {
+    text-align: center;
+    background-color: black;
+    padding: 20px;
+    
+}
+nav a{
+ margin: 10px ;
+ background-color: black;
+ color: white;
+ text-decoration: none;
+ font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+
+main{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+
+}
+#course-work{
+grid-column: 1/3;
+grid-row: 1/2;
+border-color: black;
+border-style:dashed;
+margin: 15px;
+}
+
+#course-work h2, #my-state h2, #course h2{
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+   
+}
+
+#my-state{
+    grid-column: 3/4;
+    grid-row: 1/2;
+    border-color: black;
+    border-style:dashed;
+    margin: 15px;
+}
+#course{
+    grid-column:1/4 ;
+    grid-row: 2/3;
+    border-color: black;
+    border-style:dashed;
+    margin: 15px;
+}
+.filter{
+    text-align: center;
+    margin: 10px;
+   
+}
+.filter button{
+    border-radius: 10%;
+    background-color: black;
+    color: white;
+    padding: 10px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+footer{
+    background-color: rgb(160, 214, 165);
+    color: black;
+    text-align: center;
+    padding: 15px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+footer p{
+    margin: 5px;
+}
+img{
+    width: 25em;
+    align-content: center;
+    margin: 5px;
+}
+.options {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+   text-align: center;
+   margin: 10px;
+}
+
+.options a{
+    background-color:  rgb(160, 214, 165);
+    color: black;
+    border-radius: 10%;
+    margin: 10px;
+    text-decoration: none;
+    font-family:  Tahoma, Geneva, Verdana, sans-serif;
+}
