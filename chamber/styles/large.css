@@ -1,0 +1,19 @@
+@media only screen and (min-width:38rem){
+    #myButtom{
+        display: none;
+    }
+    ul.menuLinks, ul.menuLinks.open{
+        display: flex;
+        justify-content: flex-end;
+        margin: 0;
+        
+    }
+    nav{
+        margin: 0;
+    }
+
+    .list section{
+        width: 506.21px;
+    }
+}
+

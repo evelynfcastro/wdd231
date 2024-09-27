@@ -1,0 +1,62 @@
+
+{
+"membersInformation":[
+    {
+        "name": "Organização Castro",
+        "addresses":" Street João Pessoa 114",
+        "phoneNumber": "32442110",
+        "url":"https://www.instagram.com/organizacaocastro/",
+        "image":"https://lh3.googleusercontent.com/p/AF1QipMSe4qWYEOPJTgz6PgLg5tcQZuzDwigg46YHLWU=s1360-w1360-h1020",
+        "memberLevel": 3
+    },
+    {
+        "name":"Kabana",
+        "addresses":" Street Manduca Rodrigues, 690",
+        "phoneNumber":"(55) 98437-3536",
+        "url":"https://www.instagram.com/kabanadochimarrao/",
+        "image":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT1I72bC9Ir7o-sSaEBmzPjUq6tK1dmDe-3jnoK4glTFg&s",
+        "memberLevel":3
+    },
+    {
+        "name":"Fondue Frontière",
+        "addresses":" Street Duque de Caxias, 1982",
+        "phoneNumber":"(55) 3242-7000",
+        "url":"https://www.facebook.com/fonduefrontiere/?_rdr",
+        "image":"https://scontent.fcgh14-1.fna.fbcdn.net/v/t39.30808-6/305035457_480151614121643_8718467742660842855_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=6ee11a&_nc_ohc=GydVmZzSlaMQ7kNvgEZjH6R&_nc_ht=scontent.fcgh14-1.fna&_nc_gid=ApUnszaX1c1cHd1MBwUNcux&oh=00_AYCpGQoo-Dru6KgPMQSOZD33ONyoBfzFmLqoTQ91aKRT4g&oe=66FBB507",
+        "memberLevel":3 
+    },
+    {
+        "name":"Restaurante Paz",
+        "addresses":"Street Silveira Martins, 840 ",
+        "phoneNumber": "(55) 3242-3555",
+        "url":"https://www.instagram.com/pazrestauranteecafeteria/",
+        "image":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTLjVyud-mpfBEY8vhcrc64PFrgxqaE-f7-XQ&s",
+        "memberLevel": 2
+    },
+    {
+        "name":"Pizzaria Gato Veio",
+        "addresses":"Street Tamandaré, 2404",
+        "phoneNumber":"(55) 3242-2000",
+        "url":"https://www.instagram.com/pizzariailgato/reels/",
+        "image":"https://static.ifood-static.com.br/image/upload/t_medium/logosgde/094bfe36-08bb-468e-bb59-1fb71861214a/202210101316_078o_i.jpg",
+        "memberLevel":1
+    },
+    {
+        "name":"Müller Joyas",
+        "addresses":"Street Manduca Rodrigues, 725",
+        "phoneNumber":"(55) 3242-2265",
+        "url":"https://www.instagram.com/muller_joias/",
+        "image":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSLvlHeEdyG7aEDB49y6yZ7Cn2A5GBUS5fYmw&s",
+        "memberLevel":2
+    },
+    {
+        "name":"Ponto do Livro",
+        "addresses":"Street Conde de Porto Alegre, 838",
+        "phoneNumber":" (55) 98435-8110",
+        "url":"https://www.instagram.com/pontodolivro_/?hl=en",
+        "image":"https://lh3.googleusercontent.com/p/AF1QipOCc3-5et4vKcBbrZ6OLkrimkZzwB84eC8D8bQm=s1360-w1360-h1020",
+        "memberLevel": 2
+    }
+
+]
+}

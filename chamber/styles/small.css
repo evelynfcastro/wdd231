@@ -1,0 +1,107 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Sansita:ital,wght@0,400;0,700;0,800;0,900;1,400;1,700;1,800;1,900&display=swap');
+main{
+    background-color: rgba(23, 53, 64, 1);
+    margin-bottom: 0;
+    padding-bottom: .25rem ;
+    padding-top: .25rem ;
+}
+nav{
+   background-color: #84B026 ; 
+   list-style-type: none;
+}
+h1{
+    font-family: "Sansita";
+    background-color: #84B026;
+    margin: 0%;
+    padding: 10px;
+    padding-top: 20px;
+
+}
+#myButtom{
+    font-size: 2em ;
+    background: none;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    text-align: right;
+    padding: .25rem 2vw;
+}
+ul.menuLinks li a{
+    text-decoration: none;
+    color: black;
+    display: block;
+    padding: .75rem 2vw;
+    font-family: "Sansita";
+    
+}
+ul {
+    list-style-type: none;
+}
+
+.curren-menu-li{
+    background-color: #5b781d76;
+    
+}
+ul.menuLinks{
+    display: none;
+
+}
+ul.menuLinks.open{
+    display: block;
+    margin: 0;
+}
+img{
+    width: 15rem;
+    height: 15rem;
+}
+
+div{
+    margin: 10px;
+    margin-bottom: 10px;
+    align-items: center;
+    text-align: center;
+    
+}
+div section{
+    margin: 10px;
+    padding: 10px;
+    background-color: #84B026;
+    font-family: "Sansita";
+    
+}
+footer{
+    background-color: #84B026;
+    margin: 0;
+    padding: 0.50rem;
+    font-family: "Sansita";
+    text-align: center;
+
+    }
+
+    div.grid {
+    
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(15rem, 18rem));
+        grid-gap: 5px;
+        align-items: center;
+        text-align: center;
+        
+    }
+    .list{
+        display: flex;
+        flex-direction: column;
+        text-align: initial;
+    }
+    .list section {
+        display: grid;
+        grid-template-columns: 2fr 1fr 1fr;
+        margin: 10px;
+        padding: 0.50rem;
+        width: 400px;
+       
+    }
+    .list section img {
+        display: none; 
+    }
+    

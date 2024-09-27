@@ -1,0 +1,33 @@
+{
+    "familyName": "Castro",
+    "dateMoved": 2022,
+    "numberPeople": 5,
+    "visitedByBishopric": true,
+    "familyMembers": [
+        {
+            "name": "Cesar",
+            "gender": "Male",
+            "birthDate": "03-03-1978"
+        },
+        {
+            "name": "Ana Sabrina",
+            "gender": "Famale",
+            "birthDate": "04-15-1980"
+        },
+        {
+            "name": "Evelyn",
+            "gender": "Famale",
+            "birthDate": "05-07-2002"
+        },
+        {
+            "name": "Raissa",
+            "gender": "Famale",
+            "birthDate": "01-07-2006"
+        },
+        {
+            "name": "Augusto",
+            "gender": "Male",
+            "birthDate": "09-18-2011"
+        }
+    ]
+}
