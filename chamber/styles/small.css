@@ -86,6 +86,7 @@ footer{
         grid-gap: 5px;
         align-items: center;
         text-align: center;
+        justify-content: center
         
     }
     .list{
