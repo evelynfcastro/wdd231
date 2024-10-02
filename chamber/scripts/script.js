@@ -61,7 +61,7 @@ listbutton.addEventListener("click", () => {
 });
 
 const today = new Date();
-const yearElement = document.querySelector("#year");
+const yearElement = document.querySelector(".year");
 
 // Update the content of the element
 yearElement.innerHTML = ` <span class="highlight">${today.getFullYear()}</span>`;
@@ -73,3 +73,37 @@ const formattedDate = lastModified.toLocaleDateString('en-US', options);
 
 // Update the content of the element with id="lastModified"
 document.getElementById('lastmod').textContent = formattedDate;
+
+//weather section
+const townName= document.querySelector(".city");
+const image = document.querySelector("img");
+const description = document.querySelector(".description")
+const temperature = document.querySelector(".temp");
+
+const myApiKey ="28da3ca09f8cafa4321d1df173d2cbea";
+const lat="-30.88835925942744";
+const long="-55.52152248306298";
+
+const myUrl =`//api.openweathermap.org/data/2.5/weather?lat=-30.88835925942744&lon=-55.52152248306298&appid=28da3ca09f8cafa4321d1df173d2cbea&units=imperial`
+
+async function apiFetch(){
+    try {
+      const response = await fetch(myUrl);
+      if (response.ok) {
+        const data = await response.json();
+        console.log(data); // testing only
+        // displayResults(data); // uncomment when ready
+      } else {
+          throw Error(await response.text());
+      }
+    } catch (error) {
+        console.log(error);
+    }
+  }
+  
+  apiFetch();
+
+  function displayWeather(data){
+townName.innerHTML= data.name;
+
+  }
