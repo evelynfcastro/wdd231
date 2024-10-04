@@ -132,7 +132,7 @@ div.grid {
 
 
 .hero {
-    background-image: url(/chamber/images/large.webp);
+    background-image: url(http://127.0.0.1:5500/chamber/images/large.webp);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
