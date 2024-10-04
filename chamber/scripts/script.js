@@ -136,8 +136,8 @@ const myApiKey ="28da3ca09f8cafa4321d1df173d2cbea";
 const lat="-30.88835925942744";
 const long="-55.52152248306298";
 
-const myUrl =`//api.openweathermap.org/data/2.5/weather?lat=-30.88835925942744&lon=-55.52152248306298&appid=28da3ca09f8cafa4321d1df173d2cbea&units=imperial`
-const secUrl= `//api.openweathermap.org/data/2.5/forecast?lat=${lat}&lon=${long}&appid=${myApiKey}`
+const myUrl =`https://api.openweathermap.org/data/2.5/weather?lat=-30.88835925942744&lon=-55.52152248306298&appid=28da3ca09f8cafa4321d1df173d2cbea&units=imperial`
+const secUrl= `https://api.openweathermap.org/data/2.5/forecast?lat=${lat}&lon=${long}&appid=${myApiKey}`
 async function apiFetch(){
     try {
       const response = await fetch(myUrl);
