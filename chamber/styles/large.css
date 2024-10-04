@@ -15,6 +15,17 @@
     .list section{
         width: 506.21px;
     }
-    
+    .information{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-items:inherit;
+    }
+    .membersRandom{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    .events{
+        justify-content: center;
+    }
 }
 
