@@ -23,6 +23,7 @@
             <a id="github" href="https://github.com/evelynfcastro">GitHub Profile</a>
             <a id="linkedin" href="https://www.linkedin.com/in/evelynfcastro?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" >LinkedIn</a>
         </nav>
+        
     </header>
     <main>
         <section id="course-work">
@@ -39,15 +40,19 @@
         <section id="course">
             <h2>Web and Computer Programming Certificate </h2>
             <div class="filter">
-                <button onclick="filterCourses('all')">All</button>
-                <button onclick="filterCourses('wdd')">WDD</button>
-                <button onclick="filterCourses('cse')">CSE</button>
+                <button class='all' onclick="filterCourses('all')">All</button>
+                <button class='wdd' onclick="filterCourses('wdd')">WDD</button>
+                <button class='cse' onclick="filterCourses('cse')">CSE</button>
             </div>
             <div class="options">
                 <a href="#">  </a>
+                
             </div>
         </section>
-
+        <dialog id="courseDetailis">
+            <div class="info"></div>
+            <button id="close-button"> Close</button>
+        </dialog>
     </main>
 
     <footer>

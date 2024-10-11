@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:title" content="Pampa Commerce " />
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://evelynfcastro.github.io/wdd231/chamber/directory.html" />
+    <meta property="og:image" content= "images/large.webp" />
+    <meta property="og:description" content="Our mission to be aresource hub for businesses in Livramento, offering information on local events, facilitating networking opportunities, and creating a directory of local businesses.">
+    <title>Pampa Commerce</title>
+    <meta name="description" content=" This is a commerce webpage that offers information about local businesses in Santana do Livramento ">
+    <meta name="author" content="Evelyn Castro">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/large.css">
+    <link rel="icon" href="images/favicon.ico">
+
+</head>
+<body>
+    <head>
+        <h1> Pampa Commerce</h1>
+        <nav>
+            <button id="myButtom">&#9776;</button>
+        <ul class="menuLinks">
+            <li><a   href="index.html">Home</a></li>
+            <li><a  href="$">Discover</a></li>
+            <li><a  href="directory.html">Directory</a></li>
+            <li><a  class="curren-menu-li" href="joing.html">Join</a></li>
+        </ul>
+        </nav>
+     </head>
+
+     <main class="join">
+        <section class="formSec">
+          
+        <form method="get" action="thanks.html" class="joinUs">
+            <h2> Become a Member: </h2>
+            <input type="hidden" id="timestamp" name="timestamp">
+            <label> First Name <input type="text" title="Your First Name" class="firstName" name="firstName" required autocomplete="name"></label>
+            <label> Last Name <input type="text" title="Your last name" name="lastName" class="lastName" required autocomplete="last-name"></label>
+            <label> Organizational Title <input type="text" name="organizational-title" class="orgTitle" title=" organizational title within your organization" autocomplete="organization-title" pattern="^(?=[a-zA-Z\s-]{7,}$)[a-zA-Z\s-]+$"></label>
+            <label> Email <input type="email"  name="email" class="email" title=" Your email adress" required autocomplete="email" placeholder="name@gmail.com"></label>
+            <label>Phone Number<input type="tel" name="phoneNum" class="phoneNum" title="Phone Number" required autocomplete="tel"></label>
+            <label>Business/Organization's Name <input type="text" name="businessName" class="businessName" title="Your Business Name" required autocomplete="organization"></label>
+            <label>Membership Level
+                <select name="memberLeval" required>
+                    <option value="">None</option>
+                    <option value="NP">NP (non profit organizations)</option>
+                    <option value="Bronze">Bronze Membership</option>
+                    <option value="Silver">Silver Membership</option>
+                    <option value="Gold">Gold Membership</option>
+                </select>
+            </label>
+            <label> Business/Organization's Description: <textarea id="orgDescription" name="orgDescription" rows="4" cols="50"></textarea></label>
+            
+           
+            <button class="submitForm" type="submit">Join Us</button>
+        </form>
+    </section>
+    <section class="memberShipInf">
+        <h2>Membership Levels</h2>
+        <div>
+            <h3> Non Profit Membership Level</h3>
+            <button class="np"> Learn More </button>
+        </div>
+
+        <div>
+            <h3> Bronze Membership Level</h3>
+            <button class="bronze"> Learn More </button>
+        </div>
+
+        <div>
+            <h3> Silver Membership Level</h3>
+            <button class="silver"> Learn More </button>
+        </div>
+
+        <div>
+            <h3> Gold Membership Level</h3>
+            <button class="gold"> Learn More </button>
+        </div>
+
+        <dialog class="membershipLevel">
+            <div class="info"></div>
+            <button class="close-button">Close</button>
+        </dialog>
+        
+       
+
+    </section>
+
+     </main>
+
+    <footer>
+        <p>WDD231 Class Project</p>
+        <p>Evelyn Castro</p>
+        <p>© <span class="year"> </span> Pampa Commerce</p>
+        <p>Last Modified: <span id="lastmod"></span> </p>
+    </footer>
+    <script src="scripts/script.js"></script>
+</body>
+</html>

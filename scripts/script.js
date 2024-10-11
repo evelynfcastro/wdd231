@@ -31,14 +31,16 @@ const certificates =
         group: "cse",
         link:"https://byui.instructure.com/courses/239474",
         credits: 2,
-        completed: true
+        completed: true,
+        button: "buttonOpencse110"
         },
     {
         name:"WDD130",
         group:" wdd",
         link:"https://byui.instructure.com/courses/264658",
         credits: 2,
-        completed: true
+        completed: true,
+         button: "buttonOpenwd130"
     },
 
     {
@@ -46,7 +48,8 @@ const certificates =
         group: "cse",
         link:"https://byui.instructure.com/courses/263580",
         credits: 2,
-        completed: true
+        completed: true,
+        button: "buttonOpencse111"
     },
 
     {
@@ -54,7 +57,8 @@ const certificates =
         group:"cse",
         link:"https://byui.instructure.com/courses/279992",
         credits: 2,
-        completed: true
+        completed: true,
+         button: "buttonOpencse210"
     },
 
     {
@@ -62,14 +66,16 @@ const certificates =
         group:"wdd",
         link:"https://byui.instructure.com/courses/299928",
         credits: 2,
-        completed: true
+        completed: true,
+        button: "buttonOpenwdd131"
     },
     {
         name:"WDD231",
         group:"wdd",
         link:"https://byui.instructure.com/courses/310076",
         credits: 2,
-        completed: false
+        completed: false,
+        button: "buttonOpenwdd231"
     }
 ]
 
@@ -81,11 +87,12 @@ function CardCourse(filteredCourse){
       let courseGroup= item.group;
       let courseLink=item.link;
       let courseComplet= item.completed
+      let courseButton = item.button
       
       document.querySelector(".options").innerHTML += 
-      `<a class="courseInf" href="${courseLink}">
+      `<button id="${courseButton}" class="courseInf">
       <h4 class=${courseComplet}> ${courseName}</h4> 
-      </a>`;
+      </button>`;
   
     }}
 
@@ -103,3 +110,79 @@ function CardCourse(filteredCourse){
     
     // Initially show all courses
     filterCourses('all');
+
+    const courseDetailis = document.querySelector("#courseDetailis"); 
+    const closeButton = document.querySelector("#close-button");
+    const diologText= document.querySelector(".info")
+    const openButton1 = document.querySelector("#buttonOpencse110");
+    const openButton2= document.querySelector("#buttonOpenwd130");
+    const openButton3= document.querySelector("#buttonOpencse111");
+    const openButton4= document.querySelector("#buttonOpencse210");
+    const openButton5= document.querySelector("#buttonOpenwdd131");
+    const openButton6= document.querySelector("#buttonOpenwdd231");
+    openButton1.addEventListener("click", () =>{
+        courseDetailis.showModal();
+        diologText.innerHTML= 
+        ` <p>CSE110</p>
+        <h2>  Intro to Programming CSE110 </h2> 
+        <p> This course will introduce students to programming. It will introduce the building 
+        blocks of programming languages (variables, decisions, calculations,  loops, array, and input/output) and use them to solve problems.</p>
+        `
+    })
+
+    openButton2.addEventListener("click", () =>{
+        courseDetailis.showModal();
+        diologText.innerHTML= 
+        ` <p>WDD130</p>
+        <h2>  Web Fundamentals </h2> 
+        <p>This course introduces students to the World Wide Web and to careers in web site 
+        design and development. The course is hands on with students actually participating in simple web designs and programming. </p>
+        `
+    })
+
+    openButton3.addEventListener("click", () =>{
+        courseDetailis.showModal();
+        diologText.innerHTML= 
+        ` <p>CSE 111</p>
+        <h2> Programming with Functions </h2> 
+        <p>CSE 111 students become more organized, efficient, and powerful 
+        computer programmers by learning to research and call functions written by others; to write, call ,
+         debug, and test their own functions; and to handle errors within functions</p>
+        `
+    })
+    openButton4.addEventListener("click", () =>{
+        courseDetailis.showModal();
+        diologText.innerHTML= 
+        ` <p>CSE 210</p>
+        <h2>Programming with Classes</h2> 
+        <p>This course will introduce the notion of classes and objects. It will present encapsulation
+         at a conceptual level. It will also work with inheritance and polymorphism.</p>
+        `
+    })
+
+    openButton5.addEventListener("click", () =>{
+        courseDetailis.showModal();
+        diologText.innerHTML= 
+        ` <p>WDD 131</p>
+        <h2>Dynamic Web Fundamentals</h2> 
+        <p>This course builds on prior experience in Web Fundamentals and programming. 
+        Students will learn to create dynamic websites that use JavaScript to respond to
+         events, update content, and create responsive user experiences.</p>
+        `
+    })
+
+    openButton6.addEventListener("click", () =>{
+        courseDetailis.showModal();
+        diologText.innerHTML= 
+        ` <p>WDD 231</p>
+        <h2>Web Frontend Development I</h2> 
+        <p>This course builds on prior experience with Dynamic Web Fundamentals and programming. 
+        Students will focus on user experience, accessibility, 
+        compliance, performance optimization, and basic API usage.</p>
+        `
+    })
+    closeButton.addEventListener("click", () => {
+        courseDetailis.close();
+    })
+
+

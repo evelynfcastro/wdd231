@@ -183,3 +183,83 @@ thridDay.innerHTML=`${DataTranf(foreCast.list[22].dt_txt)} ------> ${foreCast.li
 
   }
  
+  // dilog information about membership level
+
+  const openNp = document.querySelector(".np");
+  const openSilver = document.querySelector(".silver");
+  const openBronze = document.querySelector(".bronze");
+  const openGold= document.querySelector(".gold");
+  const dilog = document.querySelector(".membershipLevel");
+  const closeButton = document.querySelector(".close-button");
+  const dilogText = document.querySelector(".membershipLevel div");
+
+  openNp.addEventListener("click", ()=>{
+    dilog.showModal();
+    dilogText.innerHTML=`<h2>Non Profit Membership Level</h2>
+     <p>This membership level is specifically designed for non-profit organizations. 
+     Non-profits often operate with limited budgets and focus on community services, social causes, or charitable work.</p>
+<p><strong>Benefits:</strong></p>
+<p>-Access to resources and support tailored for non-profits.<br>
+-Reduced membership fees or special grants to support operations.<br>
+-Opportunities to network with other non-profits and collaborate on community initiatives.<br>
+-Inclusion in a directory highlighting non-profit contributions to the community.</p>
+    `
+  })
+
+  openBronze.addEventListener("click", ()=>{
+    dilog.showModal();
+    dilogText.innerHTML=`
+    <h2>Bronze Membership Level</h2>
+     <p>The Bronze Membership is an entry-level option for businesses 
+    and organizations that are just starting or looking for basic benefits.</p>
+<p><strong>Benefits:</strong></p>
+<p>
+-Access to general resources and newsletters.<br>
+-Opportunity to participate in community events at a discounted rate.<br>
+-Inclusion in promotional materials that feature local businesses.</p>
+    `
+  })
+
+  openSilver.addEventListener("click", ()=>{
+    dilog.showModal();
+    dilogText.innerHTML=`<h2>Silver Membership</h2>
+     <p>The Silver Membership offers more extensive benefits compared to the Bronze level, suitable
+      for established businesses looking to enhance their visibility and community engagement.</p>
+<p><strong>Benefits:</strong></p>
+<p>-Enhanced directory listing with a description and logo.
+-Priority access to networking events and workshops.<br>
+-Regular feature in newsletters and promotional campaigns.<br>
+-Access to additional resources, including training and development opportunities.</p>
+    `
+    
+  })
+
+  openGold.addEventListener("click", ()=>{
+    dilog.showModal();
+    dilogText.innerHTML=`<h2>Gold Membership</h2>
+     <p> The Gold Membership is the premium option designed for businesses 
+     that want maximum exposure and the highest level of support.</p>
+<p><strong>Benefits:</strong></p>
+<p>-Top-tier directory listing with prominent placement and extensive details.<br>
+-Exclusive networking opportunities with local leaders and influencers.<br>
+-Featured articles in newsletters and on the website, showcasing the business.<br>
+-Priority invitations to events, workshops, and community initiatives.<br>
+-Access to specialized resources, market research, and consulting services.
+</p>
+    `
+  })
+ 
+  closeButton.addEventListener("click", ()=>{
+    dilog.close();
+  })
+
+
+  document.addEventListener("DOMContentLoaded", () => {
+    const timestampInput = document.querySelector("#timestamp");
+    if (timestampInput) {
+        const now = new Date();
+        const formattedDate = `${now.getFullYear()}-${(now.getMonth() + 1).toString().padStart(2, '0')}-${now.getDate().toString().padStart(2, '0')}`; // YYYY-MM-DD
+        timestampInput.value = formattedDate; // Set formatted date
+    }
+});
+  

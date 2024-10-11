@@ -27,6 +27,14 @@
     .events{
         justify-content: center;
     }
-  
+  .join{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  form{
+    margin-bottom: 25px;
+    margin-top: 25px;
+  }
+ 
 }
 

@@ -12,6 +12,7 @@ main {
 nav {
     background-color: #84B026;
     list-style-type: none;
+    animation: nav-load 500ms ease-in;
 }
 
 h1 {
@@ -132,7 +133,7 @@ div.grid {
 
 
 .hero {
-    background-image: url(http://127.0.0.1:5500/chamber/images/large.webp);
+    background-image: url(/wdd231/chamber/images/large.webp);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -226,4 +227,120 @@ nav a:hover{
 transform: scale(1.1); /* Scale up by 10% on hover */
 cursor: pointer;
     
+}
+form label{
+    display: block;
+    margin-top: 30px;
+    unicode-bidi: isolate;
+    padding-left: 20px;
+    
+
+
+}
+input, select, textarea{
+    display: block;
+    height: 40px ;
+    width: 250px;
+    margin-top: 5px;
+}
+
+form{
+    background-color:#84B026;
+    width: 70%;
+    padding: 15px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    display: flex; /* Flexbox layout */
+    flex-direction: column; /* Stack children vertically */
+    align-items: center; /* Center content horizontally */
+    text-align: center; /* Center text */
+}
+.formSec{
+   
+    display: grid;
+    place-items: center;
+    align-items: center;
+}
+
+button{
+    padding: 15px;
+    margin: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color: #02345c;
+    color: white;
+    border: none;
+    transition: tranform 900ms;
+}
+input:required {
+    border-right: none;
+    border-bottom: none;
+    border-top: none;
+    border-left-color: #d70000;
+    border-left-width: 5px;
+    
+}
+input:required:valid{border-left-color: rgb(0, 217, 0);}
+form h2{
+    margin-left: 20px;
+    font-family: "Sansita";
+}
+
+button:hover{
+    background-color: white;
+    color: #02345c;
+    cursor: pointer;
+    transform: translateY(-1.0rem);
+}
+.memberShipInf{
+    text-align: center;
+    display: grid; /* Enable grid layout */
+    place-items: center; /* Center both horizontally and vertically */
+}
+    
+
+.memberShipInf div{
+    background-color: rgba(33, 115, 115, 1);
+    padding: 10px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    width: 300px;
+   
+    justify-content: center;
+}
+.memberShipInf h2{
+    color: white;
+}
+  
+#results{
+    background-color: #84B026;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding: 10px;
+
+}
+
+@keyframes nav-load{
+    0%{
+        transform: translateY(-100%);
+    }
+
+    100%{
+        transform: translateY(0);
+    }
+}
+
+section div{
+    animation: section-load 500ms;
+    
+}
+
+.memberShipInf h2, .memberShipInf h3 {
+    font-family: "Sansita";
+}
+@keyframes section-load{
+    0%{
+        transform: translateY(-30px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateY(0px);
+        opacity: 1;
+    }
 }
