@@ -1,0 +1,52 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Alice&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+header{
+    color:  rgba(103, 64, 25, 1) ;
+    font-family: "Inter";
+    text-align: center;
+    padding: 1.5%;
+    background-color:rgba(237, 167, 38, 1) ;
+}
+main{
+
+    font-family: "Inter" ;
+    text-align: center;
+}
+table.colors{
+    display: flex;
+    justify-content: space-around;
+}
+
+h1, h2, h3{
+    font-family: "Inter";
+    color: rgba(103, 64, 25, 1) ;
+
+}
+
+.primary{
+    background-color: rgba(103, 64, 25, 1);
+    color: white;
+}
+.secondary{
+    background-color: rgba(237, 167, 38, 1);
+    
+}
+.accent1{
+    background-color:rgba(255, 244, 172, 1);
+}
+nav{
+    text-decoration: none;
+   
+}
+
+footer{
+    background-color: rgba(237, 167, 38, 1);
+    text-align: center;
+    padding: 2.5%;
+    font-family: "Alice";
+}
+.colored{
+    background-color:rgba(237, 167, 38, 1);
+    padding: 0%;
+}
