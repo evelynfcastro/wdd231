@@ -193,7 +193,7 @@ thridDay.innerHTML=`${DataTranf(foreCast.list[22].dt_txt)} ------> ${foreCast.li
   const closeButton = document.querySelector(".close-button");
   const dilogText = document.querySelector(".membershipLevel div");
 
-  openNp.addEventListener("click", ()=>{
+  openNp?.addEventListener("click", ()=>{
     dilog.showModal();
     dilogText.innerHTML=`<h2>Non Profit Membership Level</h2>
      <p>This membership level is specifically designed for non-profit organizations. 
@@ -206,7 +206,7 @@ thridDay.innerHTML=`${DataTranf(foreCast.list[22].dt_txt)} ------> ${foreCast.li
     `
   })
 
-  openBronze.addEventListener("click", ()=>{
+  openBronze?.addEventListener("click", ()=>{
     dilog.showModal();
     dilogText.innerHTML=`
     <h2>Bronze Membership Level</h2>
@@ -220,7 +220,7 @@ thridDay.innerHTML=`${DataTranf(foreCast.list[22].dt_txt)} ------> ${foreCast.li
     `
   })
 
-  openSilver.addEventListener("click", ()=>{
+  openSilver?.addEventListener("click", ()=>{
     dilog.showModal();
     dilogText.innerHTML=`<h2>Silver Membership</h2>
      <p>The Silver Membership offers more extensive benefits compared to the Bronze level, suitable
@@ -234,7 +234,7 @@ thridDay.innerHTML=`${DataTranf(foreCast.list[22].dt_txt)} ------> ${foreCast.li
     
   })
 
-  openGold.addEventListener("click", ()=>{
+  openGold?.addEventListener("click", ()=>{
     dilog.showModal();
     dilogText.innerHTML=`<h2>Gold Membership</h2>
      <p> The Gold Membership is the premium option designed for businesses 
@@ -249,7 +249,7 @@ thridDay.innerHTML=`${DataTranf(foreCast.list[22].dt_txt)} ------> ${foreCast.li
     `
   })
  
-  closeButton.addEventListener("click", ()=>{
+  closeButton?.addEventListener("click", ()=>{
     dilog.close();
   })
 
@@ -262,4 +262,24 @@ thridDay.innerHTML=`${DataTranf(foreCast.list[22].dt_txt)} ------> ${foreCast.li
         timestampInput.value = formattedDate; // Set formatted date
     }
 });
+
+const messsegeClient = document.querySelector(".client-messege");
+
+function checkLastVisit() {
+  const lastVisit = localStorage.getItem('lastVisit');
+
+  // If there's a last visit date, display a message
+  if (lastVisit) {
+      const message = `Welcome back! Your last visit was on ${new Date(lastVisit).toLocaleString()}.`;
+      messsegeClient.innerHTML=message// You can replace this with a more elegant display method
+  } else {
+    messsegeClient.innerHTML= "Welcome to our website for the first time!";
+  }
+
+  // Update the last visit date to the current date
+  localStorage.setItem('lastVisit', new Date().toISOString());
+}
+
+// Call the function on page load
+checkLastVisit();
   
