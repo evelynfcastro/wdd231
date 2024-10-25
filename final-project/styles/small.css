@@ -1,0 +1,274 @@
+
+
+ul {
+    list-style-type: none;
+}
+ul.menuLinks li a{
+    text-decoration: none;
+    color: black;
+    margin: 10px;
+    padding: 10px;
+    
+}
+    h1, h2, h3, h4, p, a{
+       color: rgba(103, 64, 25, 1);
+       font-family: "Inter";
+    }
+.curren-menu-li {
+    background-color: rgb(237, 204, 143);
+
+
+}
+.menuLinks li a:hover{
+    background-color: rgba(237, 167, 38, 1);
+    padding: 10px;
+}
+.img-container{
+    display: flex;
+    justify-content: flex-end;
+}
+.img-container img{
+    width: 90%;
+    margin: 0;
+    padding: 0;
+    justify-items: center;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);
+}
+.story, .feedback{
+    display: flex;
+    flex-direction: column;
+}
+.content{
+    margin: 50px;
+    padding: 20px;
+ 
+}
+.img-container {
+    padding-right: 30px;
+}
+.content h1{
+    margin-bottom: 3em;
+    font-size: 40px;
+
+}
+
+ul.menuLinks {
+    display: none;
+
+}
+
+ul.menuLinks.open {
+    display: block;
+    margin: 0;
+}
+#myButtom {
+    font-size: 2em;
+    background: none;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    text-align:  right;
+    
+}
+header{
+    display: flex;
+    justify-content: space-between;
+
+}
+.logo{
+    padding: 10px;
+}
+.mission{
+    margin-top: 5em;
+}
+.mission h2{
+    text-align: center;
+}
+.flex-mission div h3{
+    text-align: center;
+
+}
+.flex-mission div{
+    background-color: rgb(237, 204, 143);
+    height: 20vw;
+    margin-left: 10px ;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    padding: 20px;
+    border-radius: 4%;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);
+
+}
+.media, .team{
+    display:flex;
+    flex-direction: column;
+    margin: 30px;
+   
+    
+}
+footer .logo{
+    margin: 30px;
+    padding: 0;
+   
+}
+.team a{
+    text-decoration: none;
+    margin-bottom: 10px;
+}
+footer{
+    margin-top: 2em;
+    
+}
+.cookies{
+    display: flex;
+    flex-direction: column;
+   
+
+  }
+.cookies div img{
+    width: 18em;
+    height: 331px;
+   
+}
+.cookies div{
+    margin: 10px;
+    text-align: center;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);
+    padding: 15px;
+
+}
+.products{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.title{
+    
+    font-size: 2em;
+    background-color: rgb(237, 204, 143);
+    padding: 10px;
+    width: 9em;
+    text-align: center;
+    border-radius: 40px;
+    
+    
+}
+.img2{
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    flex-direction: column;
+    margin-bottom: 7em;
+}
+.img2 img{
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+.img-container1{
+    width: 40em;
+    margin: 15px;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);
+    
+}
+
+.client-opinion {
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+.client-opinion h1{
+    font-size: 2em;
+}
+.faq-flex{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+}
+.faq-flex div{
+    width: 15em;
+    margin: 30px;
+}
+
+.faq-flex div h4{
+    font-family: "Inter";
+   
+}
+.faq h2{
+    font-size: 2em;
+}
+.faq, .feedback{
+    margin-top: 4em;
+}
+.faq{
+    padding: 20px;
+}
+.contactUs{
+    display: flex;
+    flex-direction: column;
+    width: 30em;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);
+    padding: 30px;
+    color: rgba(103, 64, 25, 1);
+}
+.contactUs label{
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+   
+}
+.contactUs input{
+    height: 40px;
+}
+
+
+.form-feedback{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 8em;
+    margin-bottom: 8em;
+}
+.submitForm{
+  width: 50%;
+ height: 40px;
+ margin: 10px;
+ background-color:rgba(237, 167, 38, 1) ;
+ border: 0;
+ font-family: "Inter";
+
+
+}
+.submitForm:hover{
+    background-color: rgba(103, 64, 25, 1);
+    color: rgba(237, 167, 38, 1);
+}
+.contactUs h2{
+    margin: 10px;
+}
+   
+.display-messege{
+display: flex;
+justify-content: space-around;
+}
+
+.client-messege{
+    background-color: antiquewhite;
+    padding: 20px;
+    border-radius: 20px;
+    margin: 40px;
+    font-size: 15px;
+}
+
+#results{
+    padding: 20px;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);
+    text-align: center;
+
+}
+.title-thank{
+    text-align: center;
+    margin-top: 40px;
+}

@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta property="og:title" content="Mr Cookies" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="" />
+    <meta property="og:image" content="" />
+    <meta
+      property="og:description"
+      content="This website provides information about Mr Cookies store, its products, mission, and values. 
+    With the porpuse of improving the company visibility"
+    />
+    <title>Mr Cookies</title>
+    <meta
+      name="description"
+      content=" This website provides information about Mr Cookies store, its products, mission, and values "
+    />
+    <meta name="author" content="Evelyn Castro" />
+    <link rel="stylesheet" href="styles/small.css" />
+    <link rel="stylesheet" href="styles/large.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Inter"
+      rel="stylesheet"
+    />
+    <link rel="icon" href="" />
+  </head>
+  <body>
+    <header>
+      <img
+        class="logo"
+        src="images/Mr cookies.svg"
+        width="90px"
+        alt="Mr Cookies logo"
+      />
+      <nav>
+        <button id="myButtom">&#9776;</button>
+        <ul class="menuLinks">
+          <li><a  href="index.html">About Us</a></li>
+          <li><a href="products.html">Products</a></li>
+          <li><a class="curren-menu-li"  href="contact.html">Contact Us</a></li>
+        </ul>
+      </nav>
+    </header>
+    <body>
+<main>
+    <section class="feedback">
+
+        <div class="img-container1">
+            <img
+              class="hero-img"
+              src="/final-project/images/client.jpeg"
+              alt="hero-img"
+              loading="lazy"
+            />
+          </div>
+    
+        <div class="client-opinion">
+          <h1>We want to hear you</h1>
+          <p>
+            At Mr. Cookies, we believe that our customers are at the heart of everything we do. Your 
+            feedback and opinions are invaluable to us, as they help us improve our recipes and services. 
+            We are committed to creating the best cookie experience possible
+          </p>
+        </div>
+        
+    </section>
+      <section class="faq">
+        <h2> FAQ </h2>
+        <hr>
+        <div class="faq-flex">
+        <div>
+        <h4>What products do you offer? </h4>
+            <p>At Mr. Cookies, we specialize in a variety of delicious cookies, including 
+                classic favorites and unique flavors. 
+                You can find our offerings both in-store and online.</p>
+        </div>
+        <div>
+            <h4>Where is your physical store located?</h4>
+            <p>Our store is located at [insert address]. We invite you to visit us for a 
+                fresh-baked cookie experience!
+
+            </p>
+        </div>
+
+        <div>
+            <h4>Can I order cookies online?</h4>
+            <p>Yes! You can browse our full selection and place orders directly
+                 through our website for home delivery or pickup.
+
+            </p>
+        </div>
+
+        <div>
+            <h4>How can I stay updated on new flavors and promotions?</h4>
+            <p>Follow us on social media and subscribe to our newsletter for the latest news, 
+                special promotions, and new cookie releases!
+            </p>
+        </div>
+
+        <div>
+            <h4>Can I visit your store for cookie tastings? </h4>
+            <p>Yes! We occasionally host cookie tastings and events. 
+                Keep an eye on our social media for announcements and details!
+            </p>
+        </div>
+    </div>
+    <section class="form-feedback">
+    <form method="get" action="thanks.html" class="contactUs">
+        <h2> Share you opinion with Us: </h2>
+        <input type="hidden" id="timestamp" name="timestamp">
+        <label> First Name <input type="text" title="Your First Name" class="firstName" name="firstName" required autocomplete="name"></label>
+        <label> Last Name <input type="text" title="Your last name" name="lastName" class="lastName"  autocomplete="last-name"></label>
+        <label> Email <input type="email"  name="email" class="email" title=" Your email adress" required autocomplete="email" placeholder="name@gmail.com"></label>
+        <label> Your Massege: <textarea id="client-messege" name="client-messege" rows="4" cols="50"></textarea></label>
+        
+       
+        <button class="submitForm" type="submit">Send your Messege</button>
+    </form>
+    </section>
+
+      </section>
+</main>
+    
+    <footer>
+        <img
+        class="logo"
+        src="images/Mr cookies.svg"
+        width="100px"
+        alt="Mr Cookies logo"
+      />
+      <div class="media">
+        <a class="instagram" href=""
+          ><img src="images/instagram.svg" alt="instagram-logo"
+        /></a>
+        <a class="facebook" href=""
+          ><img src="images/facebook.svg" alt="facebook-logo"
+        /></a>
+      </div>
+      <div class="team">
+        <p><strong>Our team</strong></p>
+        <a href="" class="email">mrcookies.clients@gmail.org</a>
+        <a href="" class="phone">801 567 539</a>
+      </div>
+    </footer>
+    <script src="/final-project/script/script.js"></script>
+    </footer>
+</body>
+</html>

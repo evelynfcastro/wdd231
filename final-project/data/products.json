@@ -1,0 +1,22 @@
+{
+    "products":[
+        {
+            "name":"Chocolate Cookies",
+            "description":"Indulge in our rich and decadent chocolate cookies, made with a perfect blend of all-purpose flour, cocoa powder, and creamy chocolate chips. Each bite offers a delightful combination of soft, chewy texture and intense chocolate flavor, making them a favorite for chocolate lovers.",
+            "image":"/final-project/images/ships.jpeg"
+            
+        },
+        {
+            "name":"Brownie Cookies",
+            "description":"Experience the best of both worlds with our brownie cookies—crispy on the outside and fudgy on the inside. Crafted with premium cocoa powder and a mix of granulated and brown sugars, these cookies deliver a deep chocolate flavor reminiscent of your favorite brownies, with the convenience of a cookie format.",
+            "image":"/final-project/images/brownie.jpeg"
+            
+        },
+        {
+            "name":"Nut Cookies",
+            "description":"Enjoy the delightful crunch of our nut cookies, featuring a blend of all-purpose flour and your choice of chopped nuts like walnuts or almonds. These cookies are lightly sweetened with granulated and brown sugars, offering a perfect balance of flavors and textures that make them an irresistible snack.",
+            "image":"/final-project/images/nuts.jpeg"
+            
+        }
+    ]
+}

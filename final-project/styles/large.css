@@ -1,0 +1,53 @@
+@media only screen and (min-width:38rem){
+
+    #myButtom{
+        display: none;
+    }
+    ul.menuLinks, ul.menuLinks.open{
+        display: flex;
+        justify-content: flex-end;
+        margin: 0;
+        padding: 10px;
+        margin-top: 30px;
+        
+        
+    }
+    .menuLinks li{
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    .story, .feedback{
+        display: flex;
+        flex-direction: row;
+    }
+   
+    .flex-mission{
+        display: flex;
+    }
+  footer{
+    display: flex;
+  }
+  .cookies{
+    display: flex;
+    flex-direction: row;
+
+  }
+  .client-opinion {
+    padding: 100px;
+    margin: 0;
+}
+.img-container1{
+    width: 70em;
+    margin-left: 40px;
+    
+}
+.client-opinion {
+    padding: 70px;
+}
+.faq-flex{
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+}
+    
+}
