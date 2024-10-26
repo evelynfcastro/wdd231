@@ -1,9 +1,11 @@
 const humButton = document.querySelector("#myButtom");
 const menuLink = document.querySelector(".menuLinks");
+const header= document.querySelector("header");
 
 humButton.addEventListener("click", ()=>{
     menuLink.classList.toggle("open");
     humButton.classList.toggle("open");
+    header.classList.toggle("open");
 })
 
 const cookieInfor = document.querySelector(".cookies");

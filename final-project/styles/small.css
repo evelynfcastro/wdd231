@@ -58,8 +58,29 @@ ul.menuLinks {
 }
 
 ul.menuLinks.open {
-    display: block;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
     margin: 0;
+    text-align: center;
+
+}
+header.open{
+    display: flex;
+    flex-direction: column;
+}
+header.open .logo{
+    display: none;
+   
+
+}
+
+
+ul.menuLinks.open img.logo {
+    display: none;
+}
+ul.menuLinks.open li {
+    padding: 10px;
 }
 #myButtom {
     font-size: 2em;
@@ -271,4 +292,7 @@ justify-content: space-around;
 .title-thank{
     text-align: center;
     margin-top: 40px;
+}
+.hero{
+    margin-top: 3em;
 }
