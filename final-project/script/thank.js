@@ -27,6 +27,5 @@ const submitForm = document.querySelector(".submitForm");
   showInfo.innerHTML = 
           `<h2>Thank you for your messege ${displayForm("firstName")}  ${displayForm("lastName")}</h2>
           <p>Your email: ${displayForm("email")}<br>
-             Your phone number: ${displayForm("phoneNum")}<br>
           </p>
           <h4> Our team will read and respond you soon! </h4>`;

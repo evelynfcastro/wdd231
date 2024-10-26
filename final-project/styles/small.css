@@ -96,6 +96,33 @@ header{
     justify-content: space-between;
 
 }
+nav{
+    animation: nav-load 500ms ease-in;
+}
+
+section div{
+    animation: section-load 500ms;
+}
+
+@keyframes section-load{
+    0%{
+        transform: translateY(-30px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+@keyframes nav-load{
+    0%{
+        transform: translateY(-100%);
+    }
+
+    100%{
+        transform: translateY(0);
+    }
+}
 .logo{
     padding: 10px;
 }
